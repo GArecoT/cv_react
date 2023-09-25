@@ -1,13 +1,11 @@
-import Favorite from "pages/Favorites"
-import Start from "pages/Start"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Favorite from "pages/Favorites";
+import Start from "pages/Start";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import BasePage from "pages/BasePage";
 
 function AppRoutes() {
   return (
-
     <BrowserRouter>
-
       <Routes>
         <Route path="/" element={<BasePage />}>
           <Route index element={<Start />}></Route>
@@ -15,7 +13,7 @@ function AppRoutes() {
         </Route>
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default AppRoutes
+export default AppRoutes;
