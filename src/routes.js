@@ -1,15 +1,15 @@
-import Favorite from "pages/Favorites";
-import Start from "pages/Start";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import BasePage from "pages/BasePage";
+import HomePage from "./pages/HomePage";
+import PaginaBase from "./pages/PaginaBase";
+import Portifolio from "./pages/Portifolio";
 
 function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<BasePage />}>
-          <Route index element={<Start />}></Route>
-          <Route path="favoritos" element={<Favorite />}></Route>
+        <Route path="/" element={<PaginaBase />}>
+          <Route index element={<HomePage />}></Route>
+          <Route path="portifolio" element={<Portifolio />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

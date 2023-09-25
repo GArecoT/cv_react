@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { BsMoonFill } from "react-icons/bs";
 import { themeChange } from "theme-change";
 import { BsBrightnessLowFill } from "react-icons/bs";
-import { useRef } from "react";
 
 export default function Navbar() {
   useEffect(() => {
@@ -13,9 +12,6 @@ export default function Navbar() {
       themeChange(false);
     };
   }, []);
-
-  const darkButton = useRef();
-  const lightButton = useRef();
 
   return (
     <div className="navbar bg-base-100 lg:bg-base-200 z-10 sticky">
