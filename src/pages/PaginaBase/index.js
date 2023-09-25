@@ -4,11 +4,11 @@ import Navbar from "../../components/navbar";
 
 const PaginaBase = () => {
   return (
-    <main>
+    <>
       <Navbar />
       <Outlet />
       <BottomNavbar />
-    </main>
+    </>
   );
 };
 

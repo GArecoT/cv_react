@@ -48,8 +48,6 @@ export default function BottomNavbar() {
           <CgRowLast className="text-2xl" />
         </button>
       </Link>
-      {() => {
-      }}
     </div>
   );
 }
