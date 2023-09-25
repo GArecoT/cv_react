@@ -19,9 +19,10 @@ export default function Navbar() {
       </div>
       <div className="navbar-center hidden lg:flex  ">
         <li className="btn btn-ghost">
+          <Link to="/">Inicio</Link>
         </li>
         <li className="btn btn-ghost">
-          <Link to="/sobre">Portfolio</Link>
+          <Link to="/portifolio">Portfolio</Link>
         </li>
       </div>
       <div className="navbar-end">
