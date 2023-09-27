@@ -1,8 +1,10 @@
 import "./competencias.css";
 const Competencias = () => {
   return (
-    <div className="p-10 my-5">
-      <h1 className="text-primary font-bold text-5xl lg:mx-5">Competências</h1>
+    <div className="p-0 lg:p-10 my-5">
+      <h1 className="text-primary font-bold text-5xl lg:mx-5 ml-2 lg:ml-0">
+        Competências
+      </h1>
       <div className="my-10">
         <div className="flex flex-col w-full lg:flex-row">
           <div className="grid w-full lg:w-[50%] p-5 place-items-start">
