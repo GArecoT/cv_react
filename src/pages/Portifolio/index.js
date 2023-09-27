@@ -1,6 +1,6 @@
 const Portifolio = () => {
   return (
-    <div className="p-10">
+    <div className="p-10 my-5">
       <h1 className="text-primary font-bold text-5xl lg:mx-5">
         Por onde eu passei:
       </h1>

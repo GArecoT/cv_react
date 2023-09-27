@@ -24,6 +24,9 @@ export default function Navbar() {
         <li className="btn btn-ghost">
           <Link to="/portifolio">Portfolio</Link>
         </li>
+        <li className="btn btn-ghost">
+          <Link to="/competencias">Competências</Link>
+        </li>
       </div>
       <div className="navbar-end">
         <BsMoonFill className="mx-3 base-content text-sm" />
