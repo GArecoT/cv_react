@@ -40,37 +40,43 @@ export default function BottomNavbar() {
 
   return (
     <div className="btm-nav lg:hidden">
-      <Link to="/" ref={homeBtn}>
-        <button
-          onClick={() => {
-            console.log("portifolio");
-            homeBtn.current.className = "active text-secondary";
-            portifolioBtn.current.className = "";
-            competenciasBtn.current.className = "";
-          }}
-        >
+      <Link
+        to="/"
+        ref={homeBtn}
+        onClick={() => {
+          console.log("portifolio");
+          homeBtn.current.className = "active text-secondary";
+          portifolioBtn.current.className = "";
+          competenciasBtn.current.className = "";
+        }}
+      >
+        <button>
           <BiHomeCircle className="text-2xl" />
         </button>
       </Link>
-      <Link to="/portifolio" ref={portifolioBtn}>
-        <button
-          onClick={() => {
-            homeBtn.current.className = "";
-            portifolioBtn.current.className = "active text-secondary";
-            competenciasBtn.current.className = "";
-          }}
-        >
+      <Link
+        to="/portifolio"
+        ref={portifolioBtn}
+        onClick={() => {
+          homeBtn.current.className = "";
+          portifolioBtn.current.className = "active text-secondary";
+          competenciasBtn.current.className = "";
+        }}
+      >
+        <button>
           <CgRowLast className="text-2xl" />
         </button>
       </Link>
-      <Link to="/competencias" ref={competenciasBtn}>
-        <button
-          onClick={() => {
-            homeBtn.current.className = "";
-            portifolioBtn.current.className = "";
-            competenciasBtn.current.className = "active text-secondary";
-          }}
-        >
+      <Link
+        to="/competencias"
+        ref={competenciasBtn}
+        onClick={() => {
+          homeBtn.current.className = "";
+          portifolioBtn.current.className = "";
+          competenciasBtn.current.className = "active text-secondary";
+        }}
+      >
+        <button>
           <AiOutlineInfoCircle className="text-2xl" />
         </button>
       </Link>
