@@ -53,7 +53,7 @@ const Portifolio = () => {
               </p>
               <p className="text-lg lg:px-10 pb-3 lg:pb-5 text-justify">
                 Logo comecei a programar em{" "}
-                <em>front end</em>. Trabalhei em projetos em <em>vue</em>, com
+                <em>front-end</em>. Trabalhei em projetos em <em>vue</em>, com
                 {" "}
                 <em>bootstrap</em>. Depois comecei mexer com{" "}
                 <em>React Native</em> e{" "}

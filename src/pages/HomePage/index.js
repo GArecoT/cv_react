@@ -22,28 +22,28 @@ function HomePage() {
             <div className="mx-5 sm:mx-10 md:mx-15 lg:mx-20 my-10">
               <p className="text-justify font-sans text-lg">
                 Sou Gabriel Areco Taveira, aluno de Ciência da Computação pela
-                UFMS e desenvolvedor
-                <i>front-end</i>, com experiência real na área. Esse site serve
-                de curriculo, além de ser uma demonstração das minhas
-                habilidades no desenvolvimento <i>front-end</i>.
+                UFMS e desenvolvedor{" "}
+                <em>front-end</em>, com experiência real na área. Esse site
+                serve de curriculo, além de ser uma demonstração das minhas
+                habilidades no desenvolvimento <em>front-end</em>.
               </p>
               <p className="text-justify font-sans text-lg mt-5">
                 Esse site foi escrito em{" "}
-                <i>
+                <em>
                   <b>React</b>
-                </i>{" "}
+                </em>{" "}
                 utilizando{" "}
-                <i>
+                <em>
                   <b>tailwind</b>
-                </i>{" "}
+                </em>{" "}
                 e{" "}
-                <i>
+                <em>
                   <b>DaisyUI</b>
-                </i>. Ele contém várias páginas, um <i>switcher</i> de tema e um
-                {" "}
-                <i>
+                </em>. Ele contém várias páginas, um <em>switcher</em>{" "}
+                de tema e um{" "}
+                <em>
                   switcher
-                </i>{" "}
+                </em>{" "}
                 de língua. Todo contéudo foi desenvolvido únicamente por mim, e
                 o código fonte pode ser acessado clicando nesse{" "}
                 <a
