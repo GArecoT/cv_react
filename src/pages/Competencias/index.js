@@ -42,7 +42,7 @@ const Competencias = () => {
                   <span className="text-accent-focus">✦</span> Conhecimento de:
                   {" "}
                   <span className="text-accent">
-                    Vue, React Native, NextJS, Bootstrap e DaisyUI
+                    Vue, React Native, NextJS, Bootstrap, Tailwind e DaisyUI
                   </span>, utilizado na prática em projetos;
                 </li>
                 <li className="my-5 ml-2 text-lg">
@@ -73,7 +73,7 @@ const Competencias = () => {
                 </li>{" "}
                 <li className="my-5 ml-2 text-lg">
                   <span className="text-accent-focus">✦</span>{" "}
-                  Experiência na manutenção de dispositívos <em>desktop</em> e
+                  Experiência na manutenção de dispositivos <em>desktop</em> e
                   {" "}
                   <em>mobile</em>;
                 </li>
