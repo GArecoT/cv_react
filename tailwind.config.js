@@ -6,6 +6,6 @@ module.exports = {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["dracula", "pastel"],
+    themes: ["dracula", "corporate", "cupcake"],
   },
 };

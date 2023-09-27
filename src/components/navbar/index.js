@@ -32,7 +32,7 @@ export default function Navbar() {
         <BsMoonFill className="mx-3 base-content text-sm" />
         <div className="inline-block w-10">
           <span
-            data-toggle-theme="pastel"
+            data-toggle-theme="cupcake"
             data-act-class="pl-4"
             className="border rounded-full border-base-content flex items-center 
             cursor-pointer w-10 transition-all duration-300 ease-in-out pl-0"
