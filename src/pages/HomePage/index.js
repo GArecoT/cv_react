@@ -1,3 +1,4 @@
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 <style>
   @import
   url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
@@ -54,6 +55,24 @@ function HomePage() {
                   texto coloridinho aqui.
                 </a>
               </p>
+              <p className="my-5">
+                Você pode dar uma olhada no meu <em>Github</em> e no meu{" "}
+                <em>LinkedIn</em> pelos <em>links</em> abaixo:
+              </p>
+
+              <div className="grid relative w-full place-items-end">
+                <div className="flex relative w-fit lg:w-full flex-row">
+                  <a target="_blank" href="https://github.com/garecot">
+                    <AiFillGithub className="text-7xl mx-2" />
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/gabriel-areco-taveira-a0124927a/"
+                  >
+                    <AiFillLinkedin className="text-7xl mx-2" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
