@@ -12,7 +12,9 @@ function HomePage() {
           <div className="grid flex-grow m-0 lg:m-5 card bg-base place-items-center w-full lg:w-4/12 items-center">
             <div className="avatar mx-10">
               <div className="m-5 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                <img src="avatar.jpg" />
+                <div className="bg-gradient-to-r from-primary to-secondary w-full h-full">
+                  <img src="avatar.png" />
+                </div>
               </div>
             </div>
           </div>
@@ -22,8 +24,7 @@ function HomePage() {
             </h1>
             <div className="mx-5 sm:mx-10 md:mx-15 lg:mx-20 my-10">
               <p className="text-justify font-sans text-lg">
-                Sou Gabriel Areco Taveira, aluno de Ciência da Computação pela
-                UFMS e desenvolvedor{" "}
+                Sou Gabriel Areco Taveira, desenvolvedor{" "}
                 <em>front-end</em>, com experiência real na área. Esse site
                 serve de curriculo, além de ser uma demonstração das minhas
                 habilidades no desenvolvimento <em>front-end</em>.
@@ -57,7 +58,7 @@ function HomePage() {
               </p>
               <p className="my-5">
                 Você pode dar uma olhada no meu <em>Github</em> e no meu{" "}
-                <em>LinkedIn</em> pelos <em>links</em> abaixo:
+                <em>LinkedIn</em> pelos ícones abaixo:
               </p>
 
               <div className="grid relative w-full place-items-end">

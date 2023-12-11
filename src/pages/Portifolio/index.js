@@ -32,7 +32,7 @@ const Portifolio = () => {
           <div className="divider mt-10" />
           <div className="flex flex-col lg:flex-row place-items-start w-full my-10">
             <div className="place-items-center w-full sm:w-[50%]">
-              <p className="mb-5 font-thin">2022 ~ 2024</p>
+              <p className="mb-5 font-thin">2022 ~ ATUALIDADE</p>
               <a
                 href="https://www.instagram.com/startupsesifiems/"
                 target="_blank"
@@ -47,9 +47,7 @@ const Portifolio = () => {
               <p className="text-lg lg:px-10 pt-5 pb-3 lg:pb-5 lg:pt-10 text-justify">
                 Fui contratado em 2022 como estágiário na Startup Sesi. Comecei
                 desenvolvendo soluções IOT, e protótipos utlizando{" "}
-                <em>Arduino</em>. Trabalhei na <em>Startup</em>{" "}
-                por 2 anos, saindo após o fim do meu segundo ano como
-                estágiário.
+                <em>Arduino</em>. Trabalho atualmente na Startup.
               </p>
               <p className="text-lg lg:px-10 pb-3 lg:pb-5 text-justify">
                 Logo comecei a programar em{" "}
