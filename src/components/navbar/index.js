@@ -17,7 +17,7 @@ export default function Navbar() {
     <div className="navbar bg-base-100 lg:bg-base-200 z-10 sticky">
       <div className="navbar-start">
       </div>
-      <div className="navbar-center hidden lg:flex  ">
+      <div className="navbar-center hidden lg:flex">
         <li className="btn btn-ghost">
           <Link to="/">Inicio</Link>
         </li>
@@ -29,6 +29,7 @@ export default function Navbar() {
         </li>
       </div>
       <div className="navbar-end">
+        <button className="btn-ghost btn">EN</button>
         <BsMoonFill className="mx-3 base-content text-sm" />
         <div className="inline-block w-10">
           <span
