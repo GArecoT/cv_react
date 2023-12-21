@@ -1,6 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./navbar.css";
-import { Link } from "react-router-dom";
+import { Link, Router, useNavigate } from "react-router-dom";
 import { BsMoonFill } from "react-icons/bs";
 import { themeChange } from "theme-change";
 import { BsBrightnessLowFill } from "react-icons/bs";
@@ -13,6 +13,8 @@ export default function Navbar() {
     };
   }, []);
 
+  const nav = useNavigate();
+  const [lang, setLang] = useState(localStorage.getItem("language"));
   return (
     <div className="navbar bg-base-100 lg:bg-base-200 z-10 sticky">
       <div className="navbar-start">
@@ -29,7 +31,21 @@ export default function Navbar() {
         </li>
       </div>
       <div className="navbar-end">
-        <button className="btn-ghost btn">EN</button>
+        <button
+          className="btn-ghost btn"
+          onClick={() => {
+            if (localStorage.getItem("language") == "en") {
+              localStorage.setItem("language", "pt");
+              setLang("pt");
+            } else {
+              localStorage.setItem("language", "en");
+              setLang("en");
+            }
+            nav(0);
+          }}
+        >
+          {`${localStorage.getItem("language") == "en" ? "pt" : "en"}`}
+        </button>
         <BsMoonFill className="mx-3 base-content text-sm" />
         <div className="inline-block w-10">
           <span

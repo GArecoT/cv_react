@@ -1,0 +1,21 @@
+{
+  "home":{
+    "title":"Olá, tudo bem?",
+    "body":{
+      "p1":{
+        "text":"Sou Gabriel Areco Taveira, desenvolvedor front-end, com experiência real na área. Esse site serve de curriculo, além de ser uma demonstração das minhas habilidades no ",
+        "hilight":"desenvolvimento front-end."
+      },
+      "p2":{
+        "text1":"Esse site foi escrito em",
+        "text2":"utilizando",
+        "text3": "e",
+        "text4":". Ele contém várias páginas, um switcher de tema e um switcher de língua. Todo contéudo foi desenvolvido únicamente por mim, e o código fonte pode ser acessado clicando nesse",
+        "hilight":"texto coloridinho aqui."
+      },
+      "p3":{
+        "text":"Você pode dar uma olhada no meu Github e no meu LinkedIn pelos ícones abaixo:"
+      }
+    }
+  }
+}

@@ -1,10 +1,19 @@
+import { useEffect } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 <style>
   @import
   url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 </style>;
 
 function HomePageEN() {
+  const nav = useNavigate();
+  useEffect(() => {
+    if (localStorage.getItem("language") == "pt") {
+      nav("/");
+    }
+  });
+
   return (
     <div className="App z-0 my-5">
       <div>

@@ -1,0 +1,21 @@
+{
+  "home":{
+    "title":"Hello World!",
+    "body":{
+      "p1":{
+        "text":"I'm Gabriel Areco Taveira. I'm a front-end developer with real world experience. This site is both a CV and a way to show my ",
+        "hilight":"front-end abilities."
+      },
+      "p2":{
+        "text1":"This site was created in",
+        "text2":"with",
+        "text3": "and",
+        "text4":".It contains a theme and language switcher, and multiple pages. Everything that you see here was developed by me, and the source code can be checked here, in",
+        "hilight":"this cute green text"
+      },
+      "p3":{
+        "text":"You can also see my Github and my Linkedin by clicking the icons below:"
+      }
+    }
+  }
+}

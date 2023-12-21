@@ -16,6 +16,8 @@ function AppRoutes() {
         </Route>
         <Route path="/en" element={<PaginaBase />}>
           <Route index element={<HomePageEN />}></Route>
+          <Route path="portifolio" element={<Portifolio />}></Route>
+          <Route path="competencias" element={<Competencias />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
