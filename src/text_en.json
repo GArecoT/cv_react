@@ -17,5 +17,31 @@
         "text":"You can also see my Github and my Linkedin by clicking the icons below:"
       }
     }
+  },
+  "portifolio":{
+    "title": "Experiences:",
+    "thimalu":{
+      "time":"2019 ~ 2020",
+      "text":{
+        "p1":"I worked with Google Ads in Thimalu for a year.",
+        "p2":"It was a great experience! There I learned a lot of teamwork, how to organize my money. I managed the site. Checked the stock, estimate the delivery time and fees, and did costumer service."
+      }
+    },
+    "startup":{
+      "time":"2022 ~ NOW",
+      "text":{
+        "p1":"I was hired in 2022 as an intern in Startup Sesi. I started developing IOT solutions, and Arduino prototypes. This is where I work currently.",
+        "p2":{
+          "text1":"Here I started coding in front-end. I worked with ",
+          "text2": ", ",
+          "text3": ". After that, I started working with ",
+          "text4":" and ",
+          "text5": ". I had a lot of experience with real life projects. I'm a part of a team of developers, working very hard to deliver, and deploy software. Not only that, but I also worked with UI in ",
+          "text6":"During my time here, we used ",
+          "hilight": "scrum methodology"
+        }      
+      }
+    }
+
   }
 }

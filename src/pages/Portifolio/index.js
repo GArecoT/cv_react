@@ -1,15 +1,28 @@
+import textDataEN from "../../text_en.json";
+import { useEffect, useState } from "react";
+import textDataPT from "../../text_pt.json";
 const Portifolio = () => {
+  const [textData, setTextData] = useState(textDataPT);
+  useEffect(() => {
+    if (localStorage.getItem("language") == "en") {
+      setTextData(textDataEN);
+    } else {
+      setTextData(textDataPT);
+    }
+  });
   return (
     <div className="p-5 lg:p-10 my-5">
       <h1 className="text-primary font-bold text-5xl lg:mx-5 ml-2 lg:ml-0">
-        Por onde eu passei:
+        {textData.portifolio.title}
       </h1>
       <div className="flex flex-row mt-10">
         <div className="w-2 rounded-xl bg-gradient-to-b from-accent to-primary mr-3" />
         <div className="flex flex-col">
           <div className="flex flex-col lg:flex-row place-items-start w-full">
             <div className="place-items-center w-full sm:w-[50%]">
-              <p className="mb-5 font-thin">2019 ~ 2020</p>
+              <p className="mb-5 font-thin">
+                {textData.portifolio.thimalu.time}
+              </p>
               <a href="https://www.thimalu.com.br" target="_blank">
                 <img
                   src="logo-thimalu.png"
@@ -19,20 +32,19 @@ const Portifolio = () => {
             </div>
             <div className="place-items-center w-full lg:w-[150%]">
               <p className="text-lg lg:px-10 py-5 lg:py-14 text-justify">
-                Trabalhei por 1 ano na Thimalu, com <em>Google Ads</em>.
+                {textData.portifolio.thimalu.text.p1}
               </p>
               <p className="text-lg lg:px-10 text-justify">
-                Foi uma ótima experiência, aprendi a trabalhar em equipe, como
-                me organizar, organizar meu dinheiro. Geri o{" "}
-                <em>site</em>. Fiquei encarregado dos estoques, cálculo de frete
-                e atendimento aos clientes <em>online</em>.
+                {textData.portifolio.thimalu.text.p2}
               </p>
             </div>
           </div>
           <div className="divider mt-10" />
           <div className="flex flex-col lg:flex-row place-items-start w-full my-10">
             <div className="place-items-center w-full sm:w-[50%]">
-              <p className="mb-5 font-thin">2022 ~ ATUALIDADE</p>
+              <p className="mb-5 font-thin">
+                {textData.portifolio.startup.time}
+              </p>
               <a
                 href="https://www.instagram.com/startupsesifiems/"
                 target="_blank"
@@ -45,23 +57,31 @@ const Portifolio = () => {
             </div>
             <div className="place-items-center w-full lg:w-[150%]">
               <p className="text-lg lg:px-10 pt-5 pb-3 lg:pb-5 lg:pt-10 text-justify">
-                Fui contratado em 2022 como estágiário na Startup Sesi. Comecei
-                desenvolvendo soluções IOT, e protótipos utlizando{" "}
-                <em>Arduino</em>. Trabalho atualmente na Startup.
+                {textData.portifolio.startup.text.p1}
               </p>
               <p className="text-lg lg:px-10 pb-3 lg:pb-5 text-justify">
-                Logo comecei a programar em{" "}
-                <em>front-end</em>. Trabalhei em projetos em <em>vue</em>, com
-                {" "}
-                <em>bootstrap</em>. Depois comecei mexer com{" "}
-                <em>React Native</em> e{" "}
-                <em>NextJS</em>. Tive experiência com projetos reais, e
-                lançados, fazendo partes de times. Trabalhei, também, com
-                construção de UI na Unity.
+                {textData.portifolio.startup.text.p2.text1}
+                <em>
+                  <b>vue</b>
+                </em>
+                {textData.portifolio.startup.text.p2.text2}
+                <em>
+                  <b>bootstrap</b>
+                </em>
+                {textData.portifolio.startup.text.p2.text3}
+                <em>
+                  <b>React Native</b>
+                </em>
+                {textData.portifolio.startup.text.p2.text4}
+                <em>
+                  <b>NextJS</b>
+                </em>
+                {textData.portifolio.startup.text.p2.text5}
+                <b>Unity</b>.
               </p>
               <p className="text-lg lg:px-10 text-justify">
-                Durante meu tempo na{" "}
-                <em>Startup</em>, trabalhei usando metodologia <em>scrum</em>.
+                {textData.portifolio.startup.text.p2.text6}
+                <em>{textData.portifolio.startup.text.p2.hilight}</em>.
               </p>
             </div>
           </div>

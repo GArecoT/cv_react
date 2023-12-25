@@ -17,5 +17,30 @@
         "text":"Você pode dar uma olhada no meu Github e no meu LinkedIn pelos ícones abaixo:"
       }
     }
+  },
+  "portifolio":{
+    "title": "Por onde eu passei:",
+    "thimalu":{
+      "time":"2019 ~ 2020",
+      "text":{
+        "p1":"Trabalhei por 1 ano na Thimalu, com Google Ads",
+        "p2":"Foi uma ótima experiência, aprendi a trabalhar em equipe, como me organizar, organizar meu dinheiro. Geri o site. Fiquei encarregado dos estoques, cálculo de frete e atendimento aos clientes online."
+      }
+    },
+    "startup":{
+      "time":"2022 ~ ATUALIDADE",
+      "text":{
+        "p1":"Fui contratado em 2022 como estágiário na Startup Sesi. Comecei desenvolvendo soluções IOT, e protótipos utlizando Arduino. Trabalho atualmente na Startup.",
+        "p2":{
+          "text1":"Logo comecei a programar em front-end. Trabalhei em projetos em ",
+          "text2": ", com ",
+          "text3": ". Depois comecei mexer com ",
+          "text4":" e ",
+          "text5": ". Tive experiência com projetos reais, e lançados, fazendo partes de times. Trabalhei, também, com construção de UI na ",
+          "text6":"Durante meu tempo na Startup, trabalhei usando metodologia ",
+          "hilight": "scrum"
+        }      
+      }
+    }
   }
 }
