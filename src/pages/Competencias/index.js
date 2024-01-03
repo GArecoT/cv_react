@@ -1,56 +1,73 @@
 import "./competencias.css";
+import { useEffect, useState } from "react";
+import textDataEN from "../../text_en.json";
+import textDataPT from "../../text_pt.json";
+
 const Competencias = () => {
+  const [textData, setTextData] = useState(textDataPT);
+  useEffect(() => {
+    if (localStorage.getItem("language") == "en") {
+      setTextData(textDataEN);
+    } else {
+      setTextData(textDataPT);
+    }
+  });
   return (
     <div className="p-0 lg:p-10 my-5">
       <h1 className="text-primary font-bold text-5xl lg:mx-5 ml-2 lg:ml-0">
-        Competências
+        {textData.competencies.title}
       </h1>
       <div className="my-10">
         <div className="flex flex-col w-full lg:flex-row">
           <div className="grid w-full lg:w-[50%] p-5 place-items-start">
             <div>
               <h1 className="text-secondary-focus font-bold text-2xl">
-                Computação<span className="text-accent-focus">/Software</span>
+                {textData.competencies.comp}
+                <span className="text-accent-focus">/Software</span>
               </h1>
               <ul>
                 <li className="my-5 ml-2 text-lg">
-                  <span className="text-accent-focus">✦</span> Uso avançado de
-                  {" "}
-                  <em>Linux</em>, e <em>softwares</em> associados ao SO{" "}
+                  <span className="text-accent-focus">✦</span>
+                  {textData.competencies.part1.p1.text1}
+                  <em>Linux</em>
+                  {textData.competencies.part1.p1.text2}
+                  <em>softwares</em>
+                  {textData.competencies.part1.p1.text3}
                   <span className="text-accent">(vim, bash, gimp, etc)</span>;
                 </li>
                 <li className="my-5 ml-2 text-lg">
                   <span className="text-accent-focus">✦</span>{" "}
-                  Conhecimento da linguagens:{" "}
+                  {textData.competencies.part1.p2.text1}
                   <span className="text-accent">
-                    C, C++, C#, Python, Java e Rust
+                    C, C++, C#, Python, Java {textData.competencies.and} Rust
                   </span>;
                 </li>
                 <li className="my-5 ml-2 text-lg">
-                  <span className="text-accent-focus">✦</span> Conhecimento de
-                  {" "}
-                  <span className="text-accent">Arduino</span>{" "}
-                  em projetos de IOT;
+                  <span className="text-accent-focus">✦</span>
+                  {textData.competencies.part1.p3.text1}
+                  <span className="text-accent">Arduino</span>
+                  {textData.competencies.part1.p3.text2}
                 </li>
                 <li className="my-5 ml-2 text-lg">
-                  <span className="text-accent-focus">✦</span> Conhecimento de:
-                  {" "}
+                  <span className="text-accent-focus">✦</span>
+                  {textData.competencies.part1.p4.text1}
                   <span className="text-accent">
-                    HTML, CSS, Javascript e Typescript,
-                  </span>{" "}
-                  utilizado na prática em projetos;
+                    HTML, CSS, Javascript {textData.competencies.and} Typescript
+                  </span>
+                  {textData.competencies.part1.p4.text2}
                 </li>
                 <li className="my-5 ml-2 text-lg">
-                  <span className="text-accent-focus">✦</span> Conhecimento de:
-                  {" "}
+                  <span className="text-accent-focus">✦</span>
+                  {textData.competencies.part1.p4.text1}
                   <span className="text-accent">
-                    Vue, React Native, NextJS, Bootstrap, Tailwind e DaisyUI
-                  </span>, utilizado na prática em projetos;
+                    Vue, React Native, NextJS, Bootstrap, Tailwind{" "}
+                    {textData.competencies.and} DaisyUI
+                  </span>
+                  {textData.competencies.part1.p4.text2}
                 </li>
                 <li className="my-5 ml-2 text-lg">
-                  <span className="text-accent-focus">✦</span>{" "}
-                  Expriência na manipulação e configuração de modelos 3D para
-                  impressão no{"  "}
+                  <span className="text-accent-focus">✦</span>
+                  {textData.competencies.part1.p5.text1}
                   <span className="text-accent">
                     CURA
                   </span>;
@@ -62,27 +79,31 @@ const Competencias = () => {
           <div className="grid w-full lg:w-[50%] p-5 place-items-start">
             <div>
               <h1 className="text-secondary-focus font-bold text-2xl">
-                Computação<span className="text-accent-focus">/Hardware</span>
+                {textData.competencies.comp}
+                <span className="text-accent-focus">/Hardware</span>
               </h1>
               <ul>
                 <li className="my-5 ml-2 text-lg">
-                  <span className="text-accent-focus">✦</span>{" "}
-                  Experiência com solda de estanho;
+                  <span className="text-accent-focus">✦</span>
+                  {textData.competencies.part2.p1}
                 </li>
                 <li className="my-5 ml-2 text-lg">
-                  <span className="text-accent-focus">✦</span>{" "}
-                  Experiência na montagem de computadores <em>desktop</em>;
+                  <span className="text-accent-focus">✦</span>
+                  {textData.competencies.part2.p2}
+                  <em>desktop</em>
+                  {textData.competencies.part2.p3}
                 </li>{" "}
                 <li className="my-5 ml-2 text-lg">
-                  <span className="text-accent-focus">✦</span>{" "}
-                  Experiência na manutenção de dispositivos <em>desktop</em> e
-                  {" "}
-                  <em>mobile</em>;
+                  <span className="text-accent-focus">✦</span>
+                  {textData.competencies.part2.p4}
+                  <em>desktop{" "}</em>
+                  {textData.competencies.and}
+                  <em>{" "}mobile</em>
+                  {textData.competencies.part2.p5}
                 </li>
                 <li className="my-5 ml-2 text-lg">
-                  <span className="text-accent-focus">✦</span>{" "}
-                  Experiência na impressão de modelos 3D em impressoras de
-                  resina e de filamento.
+                  <span className="text-accent-focus">✦</span>
+                  {textData.competencies.part2.p6}
                 </li>
               </ul>
             </div>
@@ -93,16 +114,16 @@ const Competencias = () => {
           <div className="grid w-full lg:w-[50%] p-5 place-items-start">
             <div>
               <h1 className="text-secondary-focus font-bold text-2xl">
-                Línguas
+                {textData.competencies.part3.title}
               </h1>
               <ul>
                 <li className="my-5 ml-2 text-lg">
-                  <span className="text-secondary-focus">✦</span>{" "}
-                  Inglês fluente;
+                  <span className="text-secondary-focus">✦</span>
+                  {textData.competencies.part3.p1}
                 </li>
                 <li className="my-5 ml-2 text-lg">
-                  <span className="text-secondary-focus">✦</span>{" "}
-                  Japonês Iniciante.
+                  <span className="text-secondary-focus">✦</span>
+                  {textData.competencies.part3.p2}
                 </li>
               </ul>
             </div>
@@ -111,29 +132,30 @@ const Competencias = () => {
           <div className="grid w-full lg:w-[50%] p-5 place-items-start">
             <div>
               <h1 className="text-secondary-focus font-bold text-2xl">
-                Outros
+                {textData.competencies.part4.title}
               </h1>
               <ul>
                 <li className="my-5 ml-2 text-lg">
-                  <span className="text-secondary-focus">✦</span>{" "}
-                  Familiaridade e experiência com método{" "}
-                  <span className="text-secondary-focus">Scrum</span>;
+                  <span className="text-secondary-focus">✦</span>
+                  {textData.competencies.part4.p1}
+                  {textData.competencies.part4.p2}
+                  <span className="text-secondary-focus">Scrum</span>
+                  {textData.competencies.part4.p3}
                 </li>
                 <li className="my-5 ml-2 text-lg">
-                  <span className="text-secondary-focus">✦</span>{" "}
-                  Familiaridade e experiência com{" "}
+                  <span className="text-secondary-focus">✦</span>
+                  {textData.competencies.part4.p1}
                   <span className="text-secondary-focus">
                     Microsoft Azure DevOps
                   </span>;
-                  {" "}
-                </li>{" "}
+                </li>
                 <li className="my-5 ml-2 text-lg">
-                  <span className="text-secondary-focus">✦</span>{" "}
-                  Familiaridade com repositórios{" "}
+                  <span className="text-secondary-focus">✦</span>
+                  {textData.competencies.part4.p4}
                   <span className="text-secondary-focus">
                     Git
-                  </span>{" "}
-                  com vários integrantes.
+                  </span>
+                  {textData.competencies.part4.p5}
                 </li>
               </ul>
             </div>

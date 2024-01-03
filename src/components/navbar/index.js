@@ -4,9 +4,17 @@ import { Link, Router, useNavigate } from "react-router-dom";
 import { BsMoonFill } from "react-icons/bs";
 import { themeChange } from "theme-change";
 import { BsBrightnessLowFill } from "react-icons/bs";
+import textDataEN from "../../text_en.json";
+import textDataPT from "../../text_pt.json";
 
 export default function Navbar() {
+  const [textData, setTextData] = useState(textDataPT);
   useEffect(() => {
+    if (localStorage.getItem("language") == "en") {
+      setTextData(textDataEN);
+    } else {
+      setTextData(textDataPT);
+    }
     themeChange(false);
     return () => {
       themeChange(false);
@@ -21,13 +29,13 @@ export default function Navbar() {
       </div>
       <div className="navbar-center hidden lg:flex">
         <li className="btn btn-ghost">
-          <Link to="/">Inicio</Link>
+          <Link to="/">{textData.navbar.home}</Link>
         </li>
         <li className="btn btn-ghost">
-          <Link to="/portifolio">Portfolio</Link>
+          <Link to="/portifolio">{textData.navbar.portifolio}</Link>
         </li>
         <li className="btn btn-ghost">
-          <Link to="/competencias">Competências</Link>
+          <Link to="/competencias">{textData.navbar.competencies}</Link>
         </li>
       </div>
       <div className="navbar-end">

@@ -1,4 +1,9 @@
 {
+  "navbar":{
+    "home":"início",
+    "portifolio":"portifolio",
+    "competencies": "competências"
+  },
   "home":{
     "title":"Olá, tudo bem?",
     "body":{
@@ -42,5 +47,53 @@
         }      
       }
     }
-  }
+  },
+
+    "competencies":{
+      "title":"Competências",
+      "and": "e",
+      "comp": "Computação",
+      "part1":{
+        "p1":{
+          "text1":" Uso avançado de ",
+          "text2": ", e ",
+          "text3": " associados ao SO "
+        },
+        "p2":{
+          "text1":"Conhecimento das linguagens: "
+        },
+        "p3":{
+          "text1":" Conhecimento de ",
+          "text2":" em projetos de IOT;"
+        },
+        "p4":{
+          "text1":" Conhecimento de: ",
+          "text2":", utilizado na prática em projetos;"
+        },
+        "p5":{
+          "text1":" Expriência na manipulação e configuração de modelos 3D para impressão no "
+        }
+      },
+      "part2":{
+        "p1":" Experiência com solda de estanho;",
+        "p2":"Experiência na montagem de computadores ",
+        "p3":";",
+        "p4": " Experiência na manutenção de dispositivos ",
+        "p5": ";",
+        "p6": " Experiência na impressão de modelos 3D em impressoras de resina e de filamento."
+      },
+      "part3":{
+        "title":"Línguas",
+        "p1":" Inglês fluente;",
+        "p2":" Japonês Iniciante."
+      },
+      "part4":{
+        "title":"Outros",
+        "p1":" Familiaridade e experiência com ",
+        "p2":"método ",
+        "p3":";",
+        "p4":" Familiaridade com repositórios ",
+        "p5":" com vários integrantes."
+      }
+    }
 }
